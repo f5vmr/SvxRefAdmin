@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>HTML Test Page</h1>
+    <p>This is a simple HTML test page.</p>
+
+    <p>Current Date and Time: <span id="datetime"></span></p>
+
+    <p>5 + 3 = <span id="math-result"></span></p>
+
+    <p>Fruits in the array:</p>
+    <ul id="fruits-list"></ul>
+
+    <script>
+        // Display current date and time
+        document.getElementById('datetime').textContent = new Date().toLocaleString();
+
+        // Perform a simple math operation
+        document.getElementById('math-result').textContent = 5 + 3;
+
+        // Display an array of fruits
+        const fruits = ["Apple", "Banana", "Cherry"];
+        const fruitsList = document.getElementById('fruits-list');
+        fruits.forEach(fruit => {
+            const li = document.createElement('li');
+            li.textContent = fruit;
+            fruitsList.appendChild(li);
+        });
+    </script>
+</body>
+</html>

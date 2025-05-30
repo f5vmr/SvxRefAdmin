@@ -61,13 +61,13 @@ session_start();
             <h2>SvxLink Dashboards</h2>
             <div class="portal-links">
                 <div class="portal">
-                    <a href="http://portal.svxlink.uk:81" target="_blank">
+                    <a href="https://portal.svxlink.uk:8443" target="_blank">
                         <img src="images/uk-wide-logo.png" alt="UK Wide Portal" class="portal-logo">
                         <p>UK Wide</p>
                     </a>
                 </div>
                 <div class="portal">
-                    <a href="http://svxportal.qsos.uk:38082" target="_blank">
+                    <a href="https://yorkshire.svxlink.uk:8443" target="_blank">
                         <img src="images/yorkshire-svx-logo.png" alt="YorkshireSVX Portal" class="portal-logo">
                         <p>YorkshireSVX</p>
                     </a>

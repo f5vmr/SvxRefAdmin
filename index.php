@@ -14,8 +14,7 @@
             <a href="nodes.php" class="info-link">Node Information</a>
             <a href="talkgroups.php" class="info-link">Talk Groups</a>
             <a href="downloads/index.php" class="info-link">Downloads</a>
-            <a href="https://register.qsos.uk" class="join-link" target="_blank">Join SvxLink Reflector</a>
-            <a href="admin_login.php" class="info-link">Admin Login</a>
+            <a href="register/index.php" class="join-link" target="_blank">Join SvxLink Reflector</a>            
         </div>
     </header>
 

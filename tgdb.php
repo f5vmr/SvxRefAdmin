@@ -6,6 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 $tgdb_array = [
     '0'     => 'Idle',
     '91'   => 'FM Worldwide',
+    '9090' => 'FM USA East Coast Net',
     '235'   => 'FM United Kingdom',
     '2350'   => 'FM UK Chat 0',
     '2351'   => 'FM UK Chat 1',

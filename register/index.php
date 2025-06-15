@@ -48,6 +48,7 @@ session_start();
 
             <td>
             <pre>
+            
             If you have neither a DMR ID or Echolink ID, 
                then please email 'support@svxlink.uk'.
             </pre>

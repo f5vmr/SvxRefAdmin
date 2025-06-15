@@ -62,13 +62,23 @@ setInterval(() => {
 </head>
 <body>
     <div class="login-container">
-        <h1>Admin Login</h1>
-        <?php if (isset($error)) echo "<p class='error'>$error</p>"; ?>
-        <form method="POST">
-            <input type="password" name="password" placeholder="Enter Admin Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
+  <form method="post" action="login.php">
+    <h2>Admin Login</h2>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+
+    <?php if (isset($error)): ?>
+      <div class="error"><?php echo htmlspecialchars($error); ?></div>
+    <?php endif; ?>
+  </form>
+</div>
+
 </body>
 </html>
 <?php

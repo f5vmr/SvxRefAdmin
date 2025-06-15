@@ -1,0 +1,285 @@
+:root {
+    --bg-color: #1c1b29; /* Dark purple background */
+    --text-color: #d4d4ff; /* Light purple text */
+    --highlight-color: #4f86f7; /* Bright blue for highlights */
+    --card-bg-color: #2a2738; /* Slightly lighter background for cards */
+    --border-color: #393552; /* Border color for nodes */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--card-bg-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.join-link {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--highlight-color);
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px 15px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.join-link:hover {
+    background-color: var(--highlight-color);
+    color: #ffffff; /* White text on hover */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px #333, 4px 4px 0px rgba(0, 0, 0, 0.3), -1px -1px 0px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #87ceeb, #4f86f7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.node.talking {
+    border: 2px solid var(--highlight-color); /* Highlight the box with a blue border */
+}
+
+.node-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.node-name {
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.node-tgs {
+    color: var(--text-color);
+}
+
+.node-time p {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--highlight-color);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.info-link {
+    background-color: var(--highlight-color); /* Use a bright highlight color */
+    color: var(--text-color); /* Light text for contrast */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-link:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--highlight-color-hover, #4f86f7); /* Slightly darker highlight on hover */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .join-link, .info-link {
+        font-size: 1.2em;
+        padding: 12px 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: 8px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.user-form {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.users-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg-color);
+}
+
+.users-list th, .users-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.users-list th {
+    background-color: var(--header-bg-color);
+}
+.active {
+    background-color: #1f6fbf;
+}
+.inactive {
+    background-color: #555555
+}
+.reactivate-button {
+    color: #4f86f7;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #4f86f7;
+    border-radius: 4px;
+    background-color: transparent;
+    }
+    .reactivate-button:hover {
+        background-color: #4f86f7;
+        color: #fff;
+    }
+.action-buttons button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.deactivate-button {
+    color: #ff4f4f;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #ff4f4f;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.deactivate-button:hover {
+    background-color: #ff4f4f;
+    color: #fff;
+}

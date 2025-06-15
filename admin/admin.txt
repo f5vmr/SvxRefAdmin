@@ -1,0 +1,24 @@
+/var/www/html/admin/
+├── index.php        ← Login screen
+├── verify.php       ← Password check
+├── panel.php        ← Main UI after login
+/var/www/secure-config/
+└── svx_users.conf   ← Your reflector user/password config
+└── admin_passwd.php ← Stores admin credentials securely
+<?php
+return [
+    'admin1' => '$2y$10$Vp6mv0fU5PXh8xzP/S5.9OhzJgKSLqX1ciN7fz7yKHnHkjQ5vv95O', // Replace with your hash
+    'admin2' => '$2y$10$uCHXtN.ybx6nKpxq/NLBKOvDHRhPdCMUUbj32jA4dDfpqjRHKbnKW',
+];
+
+Use: php -r "echo password_hash('Your13CharPass', PASSWORD_DEFAULT) . PHP_EOL;"
+
+/var/www/secure-config/remote.conf.json
+{
+  "host": "portal.svxlink.uk",
+  "port": 19022,
+  "user": "adminuser",
+  "auth_method": "password",  // or "key"
+  "password": "your_admin_pass",  // optional if using key
+  "remote_path": "/etc/svxlink/svxlink.txt"
+}

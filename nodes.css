@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #1c1b29; /* Dark purple background */
+    --text-color: #d4d4ff; /* Light purple text */
+    --highlight-color: #4f86f7; /* Bright blue for highlights */
+    --card-bg-color: #2a2738; /* Slightly lighter background for cards */
+    --border-color: #393552; /* Border color for nodes */
+    --footer-bg: #222; /* Footer background color */
+    --footer-text: #aaa; /* Footer text color */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: var(--highlight-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* 3D-like effect */
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--card-bg-color);
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+header img {
+    height: 50px;
+    cursor: pointer;
+}
+
+header .back-button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header .back-button:hover {
+    background-color: #3a6dc9;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.node {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    transition: box-shadow 0.3s ease;
+}
+
+.node.talking {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 15px var(--highlight-color);
+}
+
+.node h2 {
+    margin: 0 0 10px;
+    color: var(--highlight-color);
+}
+
+.node p {
+    margin: 5px 0;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

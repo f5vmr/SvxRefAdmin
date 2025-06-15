@@ -46,8 +46,10 @@ session_start();
             
             <button type="submit">Register</button>
 
-            <td> If you have neither a DMR ID or Echolink ID, please email 'support@svxlink.uk'.
-                <br>
+            <td>
+            <pre>
+                 If you have neither a DMR ID or Echolink ID, then please email 'support@svxlink.uk'.
+            </pre>
             </td>
 
             

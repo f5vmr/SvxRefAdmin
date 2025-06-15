@@ -44,7 +44,9 @@ session_start();
             <label for="echolink_id">or Echolink ID:</label>
             <input type="text" id="echolink_id" name="echolink_id">
 
-            <td> "if you have neither a DMR ID or Echolink ID, please email 'support@svxlink.uk'."</td>
+            <td> If you have neither a DMR ID or Echolink ID, please email 'support@svxlink.uk'.
+                <br>
+            </td>
 
             <button type="submit">Register</button>
         </form>

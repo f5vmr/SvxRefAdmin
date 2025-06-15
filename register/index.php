@@ -38,11 +38,13 @@ session_start();
             </div>
 
 
-            <label for="dmr_id">DMR ID:</label>
+            <label for="dmr_id">Either DMR ID:</label>
             <input type="text" id="dmr_id" name="dmr_id">
 
-            <label for="echolink_id">Echolink ID:</label>
+            <label for="echolink_id">or Echolink ID:</label>
             <input type="text" id="echolink_id" name="echolink_id">
+
+            <td> "if you have neither a DMR ID or Echolink ID, please email 'support@svxlink.uk'."</td>
 
             <button type="submit">Register</button>
         </form>

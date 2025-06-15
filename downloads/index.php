@@ -95,7 +95,8 @@
     <div class="register-link">
         <img src="logo.png" alt="SvxLink Logo">
         <br>
-        <a href="https://register.qsos.uk" target="_blank" class="download-btn">Join SvxLink</a>
+        <a href="../register/index.php
+        " target="_blank" class="download-btn">Join SvxLink</a>
         <a href="/" class="download-btn">Dashboard</a>
     </div>
     <p style="text-align: center;">Page Views: 1</p>
@@ -114,8 +115,13 @@
 		<td>svxlink.instructions.pdf</td>
 		<td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.0/svxlink.instructions.pdf" class="download-btn">Download</a></td>
 		<td>0</td>
-	   </tr>
-            </table>
+	    </tr>
+        <tr>
+        <td>Svxlink DTMF Help sheet</td>
+        <td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.2/DTMF.Help.Sheet.png" class="download-btn">Download</a></td>
+        <td>0</td>
+        </tr>
+    </table>
     <footer>
         <p>&copy; YorkshireSVX</p>
     </footer>

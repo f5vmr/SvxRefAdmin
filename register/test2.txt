@@ -1,0 +1,11 @@
+<?php
+include_once('config.php');
+include_once('functions.php');
+$connection = ssh2_connect_host($host, $port, $srv_username);
+$authenticate = ssh2_authenticate($connection, $srv_username);
+$download = ssh2_download_file($connection, $remoteFile, $localFile);
+$parsedData = parse_svx_file('/var/tmp/svxreflector.conf');
+var_dump($parsedData);
+display_parsed_data($parsedData);
+
+

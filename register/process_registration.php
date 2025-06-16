@@ -1,7 +1,7 @@
 <?php
 // Initialize any PHP variables or session handling here
 session_start();
-include_once '../secure-config/config.php';
+include_once '../../secure-config/config.php';
 include_once 'functions.php';
 //require '../vendor/autoload.php';
 $validated = ""; // Initialize the variable otherwise it will be undefined

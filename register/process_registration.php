@@ -7,7 +7,7 @@ include_once 'functions.php';
 $validated = ""; // Initialize the variable otherwise it will be undefined
 // Replace error reporting with:
 error_reporting(0);
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 ini_set('log_errors', 1);
 ini_set('error_log', '/var/log/apache2/error.log');
 

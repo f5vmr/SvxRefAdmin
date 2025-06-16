@@ -3,7 +3,7 @@
 session_start();
 include_once 'config.php';
 include_once 'functions.php';
-require '../vendor/autoload.php';
+//require '../vendor/autoload.php';
 $validated = ""; // Initialize the variable otherwise it will be undefined
 // Replace error reporting with:
 error_reporting(0);

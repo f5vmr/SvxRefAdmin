@@ -22,9 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html>
-<head><title>Admin Login</title></head>
+<head>
+    <title>Admin Login</title>
+
+</head>
 <body>
 <h2>SVXReflector Admin Login</h2>
+<link rel="stylesheet" href="../style.css">
 <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
 <form method="post">
     <label>Username: <input name="username" type="text" required></label><br>

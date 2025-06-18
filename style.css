@@ -283,3 +283,21 @@ table {
     background-color: #ff4f4f;
     color: #fff;
 }
+.styled-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+}
+
+.button-link {
+    text-decoration: none;
+}

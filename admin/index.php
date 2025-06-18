@@ -1,7 +1,10 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html>
-<head><title>SVX Admin Login</title></head>
+<head>
+    <title>SVX Admin Login</title>
+</head>
+<link rel="stylesheet" href="../style.css">
 <body>
 <h2>SVX Reflector Admin Login</h2>
 <form method="POST" action="verify.php">

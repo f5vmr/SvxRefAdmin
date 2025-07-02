@@ -108,12 +108,12 @@
         </tr>
                     <tr>
                 <td>svxlink.img.xz</td>
-                <td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.0/svxlink.img.gz" class="download-btn">Download</a></td>
+                <td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.2/svxlink.img.gz" class="download-btn">Download</a></td>
                 <td>0</td>
             </tr>
 		<tr>
 		<td>svxlink.instructions.pdf</td>
-		<td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.0/svxlink.instructions.pdf" class="download-btn">Download</a></td>
+		<td><a href="https://github.com/f5vmr/svxlinkbuilder/releases/download/v2.1.2/svxlink.instructions.pdf" class="download-btn">Download</a></td>
 		<td>0</td>
 	    </tr>
         <tr>
